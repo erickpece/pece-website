@@ -1,0 +1,187 @@
+/************************************
+VARIABLES
+************************************/
+/************************************
+MIXINS
+************************************/
+/************************************
+FONTS & TEXT STYLES
+************************************/
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #555; 
+}
+
+h1 {
+  font-size: 64px;
+  padding: 12px 0;
+  margin: 0; 
+}
+
+h2 {
+  font-size: 38px;
+  padding: 0;
+  margin: 0; 
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0; 
+}
+
+p {
+  line-height: 1.5; 
+}
+
+/************************************
+PAGE SECTIONS
+************************************/
+header {
+  padding: 25px 20px;
+  background-color: white;
+  text-align: center; 
+}
+
+section {
+  padding: 30px 20px;
+  clear: both; 
+}
+
+section a, section a:visited {
+  color: #2C7FAE;
+  text-decoration: none; 
+}
+
+section.red-background {
+  background-color: #2C7FAE;
+  color: white; 
+}
+
+.lowlight {
+  border-bottom: 5px solid #226185; 
+}
+
+section.red-background a, section.red-background a:visited {
+  color: white; 
+}
+
+section.grey-background {
+  background-color: #F5F5F5; 
+}
+
+footer {
+  padding: 1px 2%;
+  background-color: #1a1a1a; 
+}
+
+/************************************
+PAGE: INDEX
+************************************/
+#profile-photo {
+  max-width: 200px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%; 
+}
+
+/************************************
+CONTACT LINKS
+************************************/
+#contact-info {
+  padding: 0;
+  list-style: none; 
+}
+
+#contact-info li {
+  width: 100%;
+  text-align: center; 
+}
+
+#contact-info img {
+  width: 75px;
+  height: 75px; 
+}
+
+/************************************
+MARKDOWN
+************************************/
+#markdown a {
+  color: #2C7FAE;
+  text-decoration: none; 
+}
+
+#markdown pre {
+  background-color: #F8F8F8;
+  color: #2C7FAE;
+  font-size: 1em;
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  word-wrap: break-word;
+  white-space: pre-line; 
+}
+
+/*
+#markdown pre {
+	background-color: #F8F8F8;
+	border-left: 6px solid $accent-color;
+
+	@include border-radius( 5px );
+	display: block;
+	word-wrap: break-word;
+	white-space: pre-line;
+	
+	padding: 15px 0 15px 15px;
+
+}
+*/
+/*
+#markdown h1 {
+	display: inline;
+	background-color: black;
+	color: $accent-color;
+	font-style: italic;
+	padding: 15px 30px;
+	font-weight: 100;
+
+}
+*/
+#markdown h2 {
+  padding-top: 20px; 
+}
+
+/************************************
+MID-SIZE SCREEN
+************************************/
+@media screen and (min-width: 600px) {
+  #contact-info li {
+    float: left;
+    width: 33%; 
+  }
+
+  #markdown pre {
+    margin: 0 2%; 
+  } 
+}
+/************************************
+FULLSCREEN
+************************************/
+@media screen and (min-width: 1180px) {
+  header, section, footer {
+    padding-left: 10%;
+    padding-right: 10%; 
+  }
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+  } 
+}
